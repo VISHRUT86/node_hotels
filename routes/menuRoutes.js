@@ -13,7 +13,7 @@ router.post('/',async(req,res)=>{
   
     // create new menu
   
-    const newmenu = await new Menu(data);
+    const newMenu = await new Menu(data);
     //  save the newmenu
   
     const response= await  newMenu.save();

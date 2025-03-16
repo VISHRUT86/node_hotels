@@ -46,7 +46,7 @@ router.post('/',async(req,res)=>{
         try{
           const taste = req.params.taste;
           if(taste=='sweets'|| taste=='spicy'||taste=='sour'){
-          const response = await menu.find({taste:taste});
+          const response = await Menu.find({taste:taste});
           console.log('response fetched');
           res.status(200).json(response);
         }
